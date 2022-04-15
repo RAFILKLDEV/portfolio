@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './App.css';
-import About from './components/about/About';
-import Start from './components/start/Start';
-import Works from './components/works/Works';
+import About from './components/about/About.js';
+import Start from './components/start/Start.js';
+import Works from './components/works/Works.js';
 
 const Portifolio = () => {
 
