@@ -73,11 +73,7 @@
 .content div {
   font-size: 200%;
   font-weight: 500;
-  margin: 5px;
-}
-
-.content div:first-of-type {
-  color: var(--yelow);
+  margin: 1% 5%;
 }
 
 .portfolio button {
@@ -104,6 +100,11 @@
   color: inherit;
 }
 
+.header #button:hover{
+  color: var(--yelow);
+  cursor:pointer;
+}
+
 a#linkedin:hover {
   color: rgb(10, 102, 194);
 }
@@ -113,7 +114,7 @@ a#github:hover {
 }
 
 a#email:hover {
-  color: var(--yelow);
+  color: red;
 }
 
 a#whatsapp:hover {

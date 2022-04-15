@@ -1,10 +1,12 @@
+import { useState } from 'react';
 import './App.css';
-import Start from './components/start/start';
+import About from './components/about/About';
+import Start from './components/start/Start';
 import Works from './components/works/Works';
 
 const Portifolio = () => {
 
-  let tab = "works"
+  const [tab, setTab] = useState("start")
 
   return(
 
@@ -22,15 +24,15 @@ const Portifolio = () => {
               <a href="https://wa.me/5516992784358?text=Estou%20interessado%20em%20Contratar%20voce" id="whatsapp" class="fa fa-whatsapp"/>
               
             </div>
-            <div className="whatsapp" onClick={console.log("kek")}>Inicio</div>
-            <div>Trabalhos</div>
-            <div>Sobre mim</div>
+            <div className="whatsapp" id='button' onClick={() => setTab("start")}>Inicio</div>
+            <div id='button' onClick={() => setTab("works")}>Trabalhos</div>
+            <div id='button' onClick={() => setTab("about")}>Sobre mim</div>
           </div>
           {(() => {
             switch (tab) {
             case "start":   return <Start/>;
             case "works": return <Works/>;
-            case "blue":  return "#0000FF";
+            case "about":  return <About/>;
             default:      return <Start/>;
           }
           })()}

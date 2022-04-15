@@ -1,0 +1,14 @@
+.content #About {
+    height: 30%;
+    width: 15%;
+
+    border-radius: 60%;
+    box-shadow: 0px 0px 20px 30px rgba(0, 0, 0, 0.2);
+    margin-bottom: 5%;
+}
+
+.content #Works {
+    height: 70%;
+    width: 40%;
+}
+
