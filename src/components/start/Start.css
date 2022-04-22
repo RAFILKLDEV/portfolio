@@ -1,0 +1,8 @@
+div#div1 {
+    color: var(--yelow);
+}
+
+div#div2 {
+    width: 50%;
+    border: 1px solid #fff;
+}

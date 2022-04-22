@@ -1,11 +1,12 @@
 import React from "react";
+import "./Start.css"
 
 const Start = () => {
     return(
         <div className="content">
-        <div style={{color: "rgb(255, 255, 42)"}}>Desenvolvedor Front-End Junior</div>
-        <div style={{border: "1px solid #fff", width:"50%"}}></div>
-        <div>Procurando uma Oportunidade!</div>
+        <div id="div1">Desenvolvedor Front-End Junior</div>
+        <div id="div2"></div>
+        <div id="div3">Procurando uma Oportunidade!</div>
       </div>
     )
 }

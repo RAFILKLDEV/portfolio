@@ -24,16 +24,18 @@ const Portifolio = () => {
               <a href="https://wa.me/5516992784358?text=Estou%20interessado%20em%20Contratar%20voce" id="whatsapp" class="fa fa-whatsapp"/>
               
             </div>
-            <div className="whatsapp" id='button' onClick={() => setTab("start")}>Inicio</div>
-            <div id='button' onClick={() => setTab("works")}>Trabalhos</div>
-            <div id='button' onClick={() => setTab("about")}>Sobre mim</div>
+            <div className="topic">
+              <div id='button' onClick={() => setTab("start")}>Inicio</div>
+              <div id='button' onClick={() => setTab("works")}>Trabalhos</div>
+              <div id='button' onClick={() => setTab("about")}>Sobre mim</div>
+            </div>
           </div>
           {(() => {
             switch (tab) {
-            case "start":   return <Start/>;
+            case "start": return <Start/>;
             case "works": return <Works/>;
-            case "about":  return <About/>;
-            default:      return <Start/>;
+            case "about": return <About/>;
+            default: return <Start/>;
           }
           })()}
         </div>
