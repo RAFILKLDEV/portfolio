@@ -7,6 +7,11 @@
     margin-bottom: 5%;
 }
 
+.content div#Aboutme * {
+  font-size: 2rem;
+  height: auto;
+}
+
 @media (max-width:1440px) {
   .content #About {
     height: 300px;
@@ -16,6 +21,16 @@
     box-shadow: 0px 0px 20px 30px rgba(0, 0, 0, 0.2);
     margin-bottom: 5%;
 }
+
+  .content #Aboutme {
+    font-size: 1.5rem;
+}
+
+  .content img#About {
+    height: 30%;
+    width: 20%;
+  }
+  
     
 }
 
@@ -32,7 +47,9 @@
   }
 
   .content img#About {
-    height: 50%;
+    height: 40%;
+    width: 50%;
     border-radius: none;
+    
   }
 }

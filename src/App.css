@@ -74,7 +74,7 @@ html {
 }
 
 .content {
-  height: 100%;
+  height: 80%;
   width: 100%;
 
   font-size: 5rem;
@@ -92,14 +92,14 @@ html {
 }
 
 .content a#Works {
-  height: 10%;
+  height: 12%;
   width: 30%;
   text-align: center;
   color: inherit;
 }
 
 .content #Description {
-  height: 5%;
+  height: 10%;
   width: 90%;
   font-size: 1.9rem;
 }
@@ -108,6 +108,7 @@ html {
   height: 60%;
   width: 90%;
 }
+
 
 .portfolio button {
   height: 8%;
@@ -174,6 +175,11 @@ a#whatsapp:hover {
   .portfolio {
     display: none;
   }
+  .content #Description {
+    height: 55%;
+    width: 90%;
+    font-size: 1.5rem;
+  }
 }
 
 @media (max-width:425px) {
@@ -209,7 +215,7 @@ a#whatsapp:hover {
     font-size: 4rem;
     align-items: center;
     align-content: center;
-    margin-top: 50%;
+    margin-top: 20%;
   }
 
   div#div1{
@@ -230,7 +236,7 @@ a#whatsapp:hover {
   .content #Description {
     height: 55%;
     width: 90%;
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .content img#Works {
