@@ -1,14 +1,26 @@
-import React from "react";
+import React, { Fragment, useState } from "react";
+import PizzariaCatalogo from "./projects/PizzariaCatalogo";
+import PokeProjeto from "./projects/PokeProjeto";
 
 const Works = () => {
+
+    const [tabProject, seTabProject] = useState("PokeProjeto") 
+
     return(
         <div className="content">
-            <a id="Works" href="https://pokemondexreact.netlify.app/">Poke Projeto</a>
-            <img id="Works" src="https://cdn.discordapp.com/attachments/809139373962297370/966897937600880660/unknown.png"></img>
-            <div id="Description">Nesse projeto utilizei os principais recursos de FrontEnd<br/>
-            Html, Css, Javascript, React, Requisições API através do Axios<br/>
-            O projeto gera um Pokemon Aleatório (Card) e também monta Pokedex (Lista de Cards)<br/>
-            Sistema de Contas ainda será implementado</div>
+            <div className="indiceProject">
+                <img id="icone" onClick={() => seTabProject("PokeProjeto")} src="https://cdn2.iconfinder.com/data/icons/pokemon-filledoutline/64/pokeball-people-pokemon-nintendo-video-game-gaming-gartoon-ball-512.png"/>
+                <img id="icone" onClick={() => seTabProject("PizzariaCatalogo")} src="https://cdn-icons-png.flaticon.com/512/3132/3132693.png"/>
+            </div>
+            <div className="project">
+                {(() => {
+                switch (tabProject) {
+                case "PokeProjeto": return <PokeProjeto/>;
+                case "PizzariaCatalogo": return <PizzariaCatalogo/>;
+                default: return <PokeProjeto/>;
+                }
+                })()}
+            </div>
         </div>
     )
 }
